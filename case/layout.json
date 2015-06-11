@@ -1,0 +1,8 @@
+/*http://www.keyboard-layout-editor.com/#/layouts/60e137dd93343a1c592984ae51854084*/
+[
+[{w:1.25,w2:1},"PgUp",{x:1},"~\n`","!\n1","@\n2","#\n3","$\n4",{w:1.75},"%\n5",{x:5},"^\n6","&\n7","*\n8","(\n9",")\n0","_\n-","+\n=","~\n`","BS"],
+[{w:1.25},"PgDn",{x:1,w:1.5},"Tab","Q","W","E","R",{w:1.25},"T",{x:5,w:1.5},"Y","U","I","O","P","{\n[","}\n]",{w:1.5},"|\n\\"],
+[{w:1.25},"Home",{x:1,w:1.75},"Ctrl","A","S","D","F","G",{w:1.5},"Browser",{x:2,w:1.5},"DevTools",{w:1.75},"H\n↙TrackPoint","J","K","L",":\n;","\"\n'",{w:2.25},"Enter"],
+[{w:1.25},"End",{x:1,w:2.25},"Shift","Z","X","C",{w:1.5},"V",{w:1.5},"Terminal",{x:2,w:1.5},"Refresh",{w:1.25},"B","N","M","<\n,",">\n.","?\n/",{a:5,w:1.75},"\n\n\n\n\n\n↑",{a:4},"Shift"],
+[{w:1.25},"Ins",{x:1,w:1.25},"Fn",{w:1.25},"Alt",{w:1.25},"Win",{w:1.5},"","Vol -\n`","Vol +","Mute",{x:2},"Left\n\n\n\n\n\nClick","Scroll\n\n\n\n\n\nButton","Right\n\n\n\n\n\nClick",{w:2.75},"","Win",{a:5,w:1.25},"\n\n\n\n\n\n←",{w:1.25},"\n\n\n\n\n\n↓",{w:1.25},"\n\n\n\n\n\n→"]
+]
