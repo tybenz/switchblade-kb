@@ -29,9 +29,9 @@ INCLUDE_PATHS = -I.
 
 # Build Options
 #   Comment out to disable
-#BOOTMAGIC_ENABLE = yes
-#MOUSEKEY_ENABLE = yes
-#EXTRAKEY_ENABLE = yes
+BOOTMAGIC_ENABLE = yes
+MOUSEKEY_ENABLE = yes
+EXTRAKEY_ENABLE = yes
 
 
 include mbed-infinity.mk
