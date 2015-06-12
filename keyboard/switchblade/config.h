@@ -25,8 +25,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #endif
 #define DEVICE_VER      0x0001
 #define MANUFACTURER    tmk.
-#define PRODUCT         Infinitiy
-#define DESCRIPTION     Massdrop Infinity keyboard firmware by tmk
+#define PRODUCT         Switchblade
+#define DESCRIPTION     Switchblade keyboard firmware by tmk
 
 
 /* matrix size */
@@ -38,6 +38,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 
 /* for prototype */
-//#define INFINITY_PROTOTYPE
+//#define SWITCHBLADE_PROTOTYPE
 
 #endif

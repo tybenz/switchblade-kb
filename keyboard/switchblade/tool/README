@@ -13,13 +13,13 @@ Example
 -------
 Debug:
     $ openocd -s tool -f tool/openocd.cfg
-    $ arm-none-eabi-gdb build/infinity.elf -ex "target remote localhost:3333"
+    $ arm-none-eabi-gdb build/switchblade.elf -ex "target remote localhost:3333"
 
 Flash bootloader:
     $ openocd -s tool -f tool/openocd.cfg -c "mt_flash kiibohd_bootloader.bin"
 
 
-Infinity SWD pinout
+Switchblade SWD pinout
 -------------------
 SWD pins are placed next to reset button; SWD_CLK, SWD_DIO, GND, 5V from top.
 Note that RESET is also needed to get full control with OpenOCD.

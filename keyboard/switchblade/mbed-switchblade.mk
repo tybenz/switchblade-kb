@@ -4,7 +4,7 @@
 CPU = -mcpu=cortex-m4 -mthumb
 
 CC_SYMBOLS += \
-	-DTARGET_INFINITY \
+	-DTARGET_SWITCHBLADE \
 	-DTARGET_K20D50M \
 	-DTARGET_M4 \
 	-DTARGET_CORTEX_M \
@@ -16,10 +16,10 @@ CC_SYMBOLS += \
 	-D__MBED__=1
 
 OBJECTS += \
-	$(OBJDIR)/mbed-infinity/cmsis_nvic.o \
-	$(OBJDIR)/mbed-infinity/system_MK20D5.o \
-	$(OBJDIR)/mbed-infinity/USBHAL_KL25Z.o \
-	$(OBJDIR)/mbed-infinity/startup_MK20D5.o \
+	$(OBJDIR)/mbed-switchblade/cmsis_nvic.o \
+	$(OBJDIR)/mbed-switchblade/system_MK20D5.o \
+	$(OBJDIR)/mbed-switchblade/USBHAL_KL25Z.o \
+	$(OBJDIR)/mbed-switchblade/startup_MK20D5.o \
 	$(OBJDIR)/libraries/mbed/targets/hal/TARGET_Freescale/TARGET_K20XX/analogin_api.o \
 	$(OBJDIR)/libraries/mbed/targets/hal/TARGET_Freescale/TARGET_K20XX/gpio_api.o \
 	$(OBJDIR)/libraries/mbed/targets/hal/TARGET_Freescale/TARGET_K20XX/gpio_irq_api.o \
@@ -46,4 +46,4 @@ INCLUDE_PATHS += \
 	-I$(MBED_DIR)/libraries/mbed/targets/hal/TARGET_Freescale/TARGET_K20XX \
 	-I$(MBED_DIR)/libraries/mbed/targets/hal/TARGET_Freescale/TARGET_K20XX/TARGET_K20D50M
 
-LINKER_SCRIPT = mbed-infinity/infinity.ld
+LINKER_SCRIPT = mbed-switchblade/switchblade.ld

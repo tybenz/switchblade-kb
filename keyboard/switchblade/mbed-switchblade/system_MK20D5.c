@@ -79,7 +79,7 @@
     #define CPU_INT_FAST_CLK_HZ             4000000u /* Value of the fast internal oscillator clock frequency in Hz  */
     #define DEFAULT_SYSTEM_CLOCK            8000000u /* Default System clock value */
 #elif (CLOCK_SETUP == 3)
-    /* for Infinity */
+    /* for Switchblade */
     #define CPU_XTAL_CLK_HZ                 8000000u
     #define CPU_XTAL32k_CLK_HZ              32768u
     #define CPU_INT_SLOW_CLK_HZ             32768u
@@ -199,7 +199,7 @@ void SystemInit (void) {
   MCG->C2 = (uint8_t)0x24u;
 
 #elif (CLOCK_SETUP == 3)
-  /* for Infinity FEI: 48MHz */
+  /* for Switchblade FEI: 48MHz */
 
   /* OUTDIV1(core/system): 48/1, OUTDIV2(bus): 48/1, OUTDIV4(flash): 48/2 */
   SIM->CLKDIV1 = SIM_CLKDIV1_OUTDIV1(0) | SIM_CLKDIV1_OUTDIV2(0) | SIM_CLKDIV1_OUTDIV4(1);

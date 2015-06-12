@@ -1,13 +1,13 @@
 /* 
- * Linker script for Massdrop Infinity
- * Infinity has bootloader in top 4KB sector of flash and app should be placed after the area.
+ * Linker script for Switchblade
+ * Switchblade has bootloader in top 4KB sector of flash and app should be placed after the area.
  *
  * based on mbed.org K20 ARM GCC linker script file: MK20D5.ld
  */
 
 MEMORY
 {
-  /* Infinity blootloader uses 4KB */
+  /* Switchblade blootloader uses 4KB */
   FLASH (rx) : ORIGIN = 4K, LENGTH = 128K - 4K
   RAM (rwx) : ORIGIN = 0x1FFFE0F8, LENGTH = 16K - 0xF8
 }

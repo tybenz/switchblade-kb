@@ -34,7 +34,7 @@ MOUSEKEY_ENABLE = yes
 #EXTRAKEY_ENABLE = yes
 
 
-include mbed-infinity.mk
+include mbed-switchblade.mk
 include $(TMK_DIR)/tool/mbed/mbed.mk
 include $(TMK_DIR)/tool/mbed/common.mk
 include $(TMK_DIR)/tool/mbed/gcc.mk

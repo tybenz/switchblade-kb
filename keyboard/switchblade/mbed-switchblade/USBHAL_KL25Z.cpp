@@ -133,7 +133,7 @@ USBHAL::USBHAL(void) {
 
     // choose usb src clock
     SIM->SOPT2 |= SIM_SOPT2_USBSRC_MASK;
-#elif defined(TARGET_INFINITY)
+#elif defined(TARGET_SWITCHBLADE)
     // USB clock source: FLL
     SIM->SOPT2 |= SIM_SOPT2_USBSRC_MASK;
 
