@@ -1,8 +1,0 @@
-case - 70 - /u/worldspawn00
-caps - 70 - SP
-teensy - 31 - Adafruit
-trackpoint - 53 - Sprintek
-gateron clears - 10 - MK.com
-internals - 28
-  - PS/2-to-USB - 6
-  - USB Split - 3

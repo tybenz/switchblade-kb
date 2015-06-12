@@ -15,8 +15,9 @@
  * Column pins are input with internal pull-down. Row pins are output and strobe with high.
  * Key is high or 1 when it turns on.
  *
- *     col: { PTD1, PTD2, PTD3, PTD4, PTD5, PTD6, PTD7 }
- *     row: { PTB0, PTB1, PTB2, PTB3, PTB16, PTB17, PTC4, PTC5, PTD0 }
+ *     col: { PTB0, PTB1, PTB2, PTB3, PTB7, PTD0, PTD1, PTD2,
+ *       PTF0, PTF1, PTF4, PTF5, PTF6, PTF7, PTB6, PTB5, PTB4, PTD7
+ *     row: { PTD3, PTC6, PTC7, PTD6, PTD4 }
  */
 static gpio_t col[MATRIX_COLS];
 static gpio_t row[MATRIX_ROWS];
@@ -31,24 +32,31 @@ static uint16_t debouncing_time = 0;
 void matrix_init(void)
 {
     /* Column(sense) */
-    gpio_init_in_ex(&col[0], PTD1, PullDown);
-    gpio_init_in_ex(&col[1], PTD2, PullDown);
-    gpio_init_in_ex(&col[2], PTD3, PullDown);
-    gpio_init_in_ex(&col[3], PTD4, PullDown);
-    gpio_init_in_ex(&col[4], PTD5, PullDown);
-    gpio_init_in_ex(&col[5], PTD6, PullDown);
-    gpio_init_in_ex(&col[6], PTD7, PullDown);
+    gpio_init_in_ex(&col[0],  PTB0, PullDown);
+    gpio_init_in_ex(&col[1],  PTB1, PullDown);
+    gpio_init_in_ex(&col[2],  PTB2, PullDown);
+    gpio_init_in_ex(&col[3],  PTB3, PullDown);
+    gpio_init_in_ex(&col[4],  PTB7, PullDown);
+    gpio_init_in_ex(&col[5],  PTD0, PullDown);
+    gpio_init_in_ex(&col[6],  PTD1, PullDown);
+    gpio_init_in_ex(&col[7],  PTD2, PullDown);
+    gpio_init_in_ex(&col[8],  PTF0, PullDown);
+    gpio_init_in_ex(&col[9],  PTF1, PullDown);
+    gpio_init_in_ex(&col[10], PTF4, PullDown);
+    gpio_init_in_ex(&col[11], PTF5, PullDown);
+    gpio_init_in_ex(&col[12], PTF6, PullDown);
+    gpio_init_in_ex(&col[13], PTF7, PullDown);
+    gpio_init_in_ex(&col[14], PTB6, PullDown);
+    gpio_init_in_ex(&col[15], PTB5, PullDown);
+    gpio_init_in_ex(&col[16], PTB4, PullDown);
+    gpio_init_in_ex(&col[17], PTD7, PullDown);
 
     /* Row(strobe) */
-    gpio_init_out_ex(&row[0], PTB0, 0);
-    gpio_init_out_ex(&row[1], PTB1, 0);
-    gpio_init_out_ex(&row[2], PTB2, 0);
-    gpio_init_out_ex(&row[3], PTB3, 0);
-    gpio_init_out_ex(&row[4], PTB16, 0);
-    gpio_init_out_ex(&row[5], PTB17, 0);
-    gpio_init_out_ex(&row[6], PTC4, 0);
-    gpio_init_out_ex(&row[7], PTC5, 0);
-    gpio_init_out_ex(&row[8], PTD0, 0);
+    gpio_init_out_ex(&row[0], PTD3, 0);
+    gpio_init_out_ex(&row[1], PTC6, 0);
+    gpio_init_out_ex(&row[2], PTC7, 0);
+    gpio_init_out_ex(&row[3], PTD6, 0);
+    gpio_init_out_ex(&row[4], PTD4, 0);
 }
 
 uint8_t matrix_scan(void)
