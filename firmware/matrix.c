@@ -40,12 +40,12 @@ void matrix_init(void)
     gpio_init_in_ex(&col[5],  PTD0, PullDown);
     gpio_init_in_ex(&col[6],  PTD1, PullDown);
     gpio_init_in_ex(&col[7],  PTD2, PullDown);
-    gpio_init_in_ex(&col[8],  PTF0, PullDown);
-    gpio_init_in_ex(&col[9],  PTF1, PullDown);
-    gpio_init_in_ex(&col[10], PTF4, PullDown);
-    gpio_init_in_ex(&col[11], PTF5, PullDown);
-    gpio_init_in_ex(&col[12], PTF6, PullDown);
-    gpio_init_in_ex(&col[13], PTF7, PullDown);
+    gpio_init_in_ex(&col[8],  ADC0, PullDown);
+    gpio_init_in_ex(&col[9],  ADC1, PullDown);
+    gpio_init_in_ex(&col[10], ADC4, PullDown);
+    gpio_init_in_ex(&col[11], ADC5, PullDown);
+    gpio_init_in_ex(&col[12], ADC6, PullDown);
+    gpio_init_in_ex(&col[13], ADC7, PullDown);
     gpio_init_in_ex(&col[14], PTB6, PullDown);
     gpio_init_in_ex(&col[15], PTB5, PullDown);
     gpio_init_in_ex(&col[16], PTB4, PullDown);
