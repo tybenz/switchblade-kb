@@ -1,4 +1,4 @@
-PROJECT = infinity
+PROJECT = switchblade
 
 TMK_DIR = ../../tmk_core
 MBED_DIR = $(TMK_DIR)/tool/mbed/mbed-sdk
