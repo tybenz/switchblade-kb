@@ -32,24 +32,24 @@ static uint16_t debouncing_time = 0;
 void matrix_init(void)
 {
     /* Column(sense) */
-    gpio_init_in_ex(&col[0],  PTB0, PullDown);
-    gpio_init_in_ex(&col[1],  PTB1, PullDown);
-    gpio_init_in_ex(&col[2],  PTB2, PullDown);
-    gpio_init_in_ex(&col[3],  PTB3, PullDown);
-    gpio_init_in_ex(&col[4],  PTB7, PullDown);
-    gpio_init_in_ex(&col[5],  PTD0, PullDown);
-    gpio_init_in_ex(&col[6],  PTD1, PullDown);
-    gpio_init_in_ex(&col[7],  PTD2, PullDown);
-    gpio_init_in_ex(&col[8],  PTF0, PullDown);
-    gpio_init_in_ex(&col[9],  PTF1, PullDown);
-    gpio_init_in_ex(&col[10], PTF4, PullDown);
-    gpio_init_in_ex(&col[11], PTF5, PullDown);
-    gpio_init_in_ex(&col[12], PTF6, PullDown);
-    gpio_init_in_ex(&col[13], PTF7, PullDown);
-    gpio_init_in_ex(&col[14], PTB6, PullDown);
-    gpio_init_in_ex(&col[15], PTB5, PullDown);
-    gpio_init_in_ex(&col[16], PTB4, PullDown);
-    gpio_init_in_ex(&col[17], PTD7, PullDown);
+    gpio_init_in_ex(&col[0],  Pb0, PullDown);
+    gpio_init_in_ex(&col[1],  Pb1, PullDown);
+    gpio_init_in_ex(&col[2],  Pb2, PullDown);
+    gpio_init_in_ex(&col[3],  Pb3, PullDown);
+    gpio_init_in_ex(&col[4],  Pb7, PullDown);
+    gpio_init_in_ex(&col[5],  Pd0, PullDown);
+    gpio_init_in_ex(&col[6],  Pd1, PullDown);
+    gpio_init_in_ex(&col[7],  Pd2, PullDown);
+    gpio_init_in_ex(&col[8],  Pf0, PullDown);
+    gpio_init_in_ex(&col[9],  Pf1, PullDown);
+    gpio_init_in_ex(&col[10], Pf4, PullDown);
+    gpio_init_in_ex(&col[11], Pf5, PullDown);
+    gpio_init_in_ex(&col[12], Pf6, PullDown);
+    gpio_init_in_ex(&col[13], Pf7, PullDown);
+    gpio_init_in_ex(&col[14], Pb6, PullDown);
+    gpio_init_in_ex(&col[15], Pb5, PullDown);
+    gpio_init_in_ex(&col[16], Pb4, PullDown);
+    gpio_init_in_ex(&col[17], Pd7, PullDown);
 
     /* Row(strobe) */
     gpio_init_out_ex(&row[0], PTD3, 0);
