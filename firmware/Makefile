@@ -49,7 +49,8 @@ TARGET_DIR = .
 
 # project specific files
 SRC =	keymap_common.c \
-	matrix.c
+	matrix.c \
+	led.c
 
 SRC := keymap.c $(SRC)
 
