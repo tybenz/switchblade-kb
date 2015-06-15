@@ -176,7 +176,7 @@ static void unselect_rows(void)
 {
     // Hi-Z(DDR:0, PORT:0) to unselect
     DDRC  &= ~0b00000011;
-    PORTC &= ~0b00000000;
+    PORTC &= ~0b00000011;
     DDRD  &= ~0b00111111;
     PORTD &= ~0b00111111;
 }
