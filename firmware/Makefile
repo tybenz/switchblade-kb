@@ -39,7 +39,7 @@
 #----------------------------------------------------------------------------
 
 # Target file name (without extension).
-TARGET = gh60_pjrc
+TARGET = switchblade
 
 # Directory common source filess exist
 TMK_DIR = ./tmk_core
@@ -49,8 +49,7 @@ TARGET_DIR = .
 
 # project specific files
 SRC =	keymap_common.c \
-	matrix.c \
-	led.c
+	matrix.c
 
 SRC := keymap.c $(SRC)
 
