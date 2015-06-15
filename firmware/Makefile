@@ -52,11 +52,7 @@ SRC =	keymap_common.c \
 	matrix.c \
 	led.c
 
-ifdef KEYMAP
-    SRC := keymap_$(KEYMAP).c $(SRC)
-else
-    SRC := keymap_poker.c $(SRC)
-endif
+SRC := keymap.c $(SRC)
 
 CONFIG_H = config.h
 
@@ -102,15 +98,3 @@ VPATH += $(TMK_DIR)
 include $(TMK_DIR)/protocol/pjrc.mk
 include $(TMK_DIR)/common.mk
 include $(TMK_DIR)/rules.mk
-
-plain: OPT_DEFS += -DKEYMAP_PLAIN
-plain: all
-
-poker: OPT_DEFS += -DKEYMAP_POKER
-poker: all
-
-poker_set: OPT_DEFS += -DKEYMAP_POKER_SET
-poker_set: all
-
-poker_bit: OPT_DEFS += -DKEYMAP_POKER_BIT
-poker_bit: all
