@@ -9,11 +9,11 @@ const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
            INS , FN0 ,  LALT, LGUI, SPC , _VOLUP, _VOLDOWN, _MUTE, MS_BTN1, MS_BTN3, MS_BTN2, NO  , SPC , RGUI, LEFT, DOWN, RGHT ),
 
     [1] =
-    KEYMAP(TRNS, ESC , F1   , F2  , F3  , F4    , F5      , TRNS , F6     , F7     , F8  , F9  , F10 , F11 , F12 , F13 , DEL , \
-           TRNS, TRNS, TRNS , TRNS, TRNS, TRNS  , TRNS    , TRNS , TRNS   , TRNS   , TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, \
-           TRNS, TRNS, TRNS , TRNS, TRNS, TRNS  , TRNS    , TRNS , TRNS   , TRNS   , TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, \
-           TRNS, TRNS, MPRV , MPLY, MNXT, TRNS  , TRNS    , TRNS , TRNS   , TRNS   , TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, \
-           TRNS, TRNS, TRNS , TRNS, TRNS, TRNS  , TRNS    , TRNS , TRNS   , TRNS   , TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS),
+    KEYMAP(TRNS, ESC , F1   , F2  , F3  , F4    , F5      , TRNS , F6     , F7     , F8     , F9  , F10 , F11 , F12 , F13 , DEL , \
+           TRNS, CAPS, TRNS , TRNS, TRNS, BSPC  , HOME    , TRNS , TRNS   , PGUP   , PSCR   , SLCK, PAUS, TRNS, TRNS, TRNS, TRNS, \
+           TRNS, TRNS, TRNS , TRNS, TRNS, DEL   , END     , TRNS , TRNS   , PGDOWN , TRNS   , INS , TRNS, TRNS, TRNS, TRNS, TRNS, \
+           TRNS, TRNS, MPRV , MPLY, MNXT, TRNS  , TRNS    , TRNS , TRNS   , TRNS   , TRNS   , TRNS, TRNS, TRNS, WAKE, TRNS, TRNS, \
+           TRNS, TRNS, TRNS , TRNS, TRNS, TRNS  , TRNS    , TRNS , TRNS   , TRNS   , TRNS   , TRNS, TRNS, TRNS, TRNS, TRNS, TRNS),
 };
 
 const uint16_t PROGMEM fn_actions[] = {
