@@ -1,0 +1,6 @@
+case - 70 - /u/worldspawn00
+caps - 70 - SP
+gateron clears - 10 - MK.com
+teensy - 35 - Adafruit
+trackpoint - 53 - Sprintek
+internals - 34
