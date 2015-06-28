@@ -169,8 +169,8 @@ static matrix_row_t read_cols(void)
 }
 
 /* Row pin configuration
- * row: 0   1   2   3   4   5   6   7
- * pin: D2  D3  C6  C7  D5  D7  D6  D4
+ * row: 0   1   2   3   4   5   6
+ * pin: D2  D3  C6  C7  D5  D7  D6
  */
 static void unselect_rows(void)
 {
@@ -212,10 +212,6 @@ static void select_row(uint8_t row)
         case 6:
             DDRD  |=  (1<<6);
             PORTD &= ~(1<<6);
-            break;
-        case 7:
-            DDRD  |=  (1<<4);
-            PORTD &= ~(1<<4);
             break;
     }
 }

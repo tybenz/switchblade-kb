@@ -19,7 +19,7 @@ at an endgame keyboard.
 
 Here's where I ended up:
 
-![](http://i.imgur.com/f4s7GoP.png)
+![](http://i.imgur.com/oYHltMg.png)
 
 
 Firmware
