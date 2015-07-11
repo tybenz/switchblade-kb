@@ -12,7 +12,7 @@ const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
            PGDN, TAB ,  Q   , W   , E   , R       , T     , XXXX , NO     , Y      , U      , I   , O   , P   , LBRC, RBRC, BSLS, \
            HOME, LCTL,  A   , S   , D   , F       , G     , F14  , F16    , H      , J      , K   , L   , SCLN, QUOT, NO  , ENT , \
            END , LSFT,  Z   , X   , C   , V       , XXXX  , F15  , F17    , B      , N      , M   , COMM, DOT , SLSH, UP  , RSFT, \
-           INS , FN0 ,  LALT, LGUI, SPC , _VOLDOWN, _VOLUP, _MUTE, MS_BTN1, MS_BTN3, MS_BTN2, NO  , SPC , RGUI, LEFT, DOWN, RGHT ),
+           INS , FN0 ,  LALT, LGUI, SPC , _VOLDOWN, _VOLUP, _MUTE, MS_BTN1, MS_BTN3, MS_BTN2, SPC , NO  , RGUI, LEFT, DOWN, RGHT ),
 
     [1] =
     KEYMAP(TRNS, ESC , F1   , F2  , F3  , F4      , F5    , TRNS , F6     , F7     , F8     , F9  , F10 , F11 , F12 , F13 , DEL , \
